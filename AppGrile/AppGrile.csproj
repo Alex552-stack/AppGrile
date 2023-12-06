@@ -99,14 +99,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\Amazon.jpg" />
-    <Content Include="Images\America.jpg" />
-    <Content Include="Images\deceniu.jpg" />
-    <Content Include="Images\Chimie.jpg" />
-    <Content Include="Images\Japonia.jpg" />
-    <Content Include="Images\Europa.png" />
-    <Content Include="Images\romeo.jpg" />
-    <Content Include="input.txt" />
+    <Content Include="Grila\Amazon.jpg" />
+    <Content Include="Grila\America.jpg" />
+    <Content Include="Grila\deceniu.jpg" />
+    <Content Include="Grila\Chimie.jpg" />
+    <Content Include="Grila\Japonia.jpg" />
+    <Content Include="Grila\Europa.png" />
+    <Content Include="Grila\romeo.jpg" />
+    <Content Include="Grila\test1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
