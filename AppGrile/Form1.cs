@@ -9,14 +9,12 @@ namespace AppGrile
 {
 	public partial class Form1 : Form
 	{
-		private List<DateIntrebare> dateIntrebare = new List<DateIntrebare>();
+		FileReader fileReader;
 		private int IntrebareCurenta = 0;
 		private int NrIntrebariCorecte = 0;
 		private int NrIntrebariGresite = 0;
 		int NrIntrebari;
-		//private string textIntrebare = "Aceasta este o intrebare";
-		//private string[] Optiuni = { "Option one", "Option two", "Option three", "Right Answer" };
-		//private bool[] raspunsuriCorecte = { false, false, false, true };
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -28,12 +26,12 @@ namespace AppGrile
 		}
 		private void UpdateEcran()
 		{
-			if (IntrebareCurenta + 1 < dateIntrebare.Count) //atata timp cat nu s-a ajuns la sfarsit
+			if (IntrebareCurenta + 1 < NrIntrebari) //atata timp cat nu s-a ajuns la sfarsit
 			{
 				ContainerIntrebare.Controls.Clear(); //sterge intrebarea curenta
 				NextButton.Enabled = false; //disable la butonul de mers mai departe
 				IntrebareCurenta++; 
-				Intrebare intrebare = new Intrebare(dateIntrebare[IntrebareCurenta]); //creare obiect now de tip Intrebare
+				Intrebare intrebare = new Intrebare(fileReader.Read()); //creare obiect now de tip Intrebare
 				intrebare.Text = "Custom Element"; 
 				intrebare.MyCustomAction += Intrebare_MyActionOccurred; //trigger ul de event(imi permite sa accesez o functie din acest obiect din clasa Intrebare)
 				ContainerIntrebare.Controls.Add(intrebare); //adaugarea intrebarii pe ecran
@@ -62,32 +60,8 @@ namespace AppGrile
 		private void CitireFisier()
 		{
 			string filePath = @"../../Grila/test1.txt";
-			using (StreamReader sr = new StreamReader(filePath))//citire fisier
-			{
-				NrIntrebari = int.Parse(sr.ReadLine()); //prima linie nr de intrebare
-				IntrebareCurenta = -1;	//nu este nicio intrebare incarcata momentan
-				NrIntrebariCorecte = 0; 
-				NrIntrebariGresite = 0;
-				sr.ReadLine(); //spatiu gol
-
-				while (!sr.EndOfStream)//pana nu se termina fisierul
-				{
-					DateIntrebare intrebare = new DateIntrebare();
-					intrebare.textIntrebare = sr.ReadLine(); //citire textIntrebare
-					
-					for (int i = 0; i < 4; i++)
-					{
-						intrebare.Optiuni[i] = sr.ReadLine(); //optiunile
-					}
-					for (int i = 0; i < 4; i++)
-					{
-						intrebare.raspunsuriCorecte[i] = sr.ReadLine().Contains("1"); //true/false, folosesc contains pentru eventualele caractere in plus cum ar fi ' '
-					}
-					intrebare.Poza = sr.ReadLine(); //nume fisier intrebare
-					dateIntrebare.Add(intrebare); 
-					sr.ReadLine();
-				}
-			}
+			fileReader = new FileReader(filePath);
+			NrIntrebari = fileReader.NrIntrebari;
 		}
 
 		private void CustomControl1_CustomEvent(object sender, EventArgs e)

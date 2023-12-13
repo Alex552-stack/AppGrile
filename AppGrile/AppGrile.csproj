@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\DateIntrebare.cs" />
+    <Compile Include="Clases\FireReader.cs" />
     <Compile Include="Components\EcranFinal.cs">
       <SubType>UserControl</SubType>
     </Compile>
