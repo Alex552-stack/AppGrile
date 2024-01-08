@@ -32,7 +32,8 @@ namespace AppGrile.Components
 
 				CheckBox checkBox = new CheckBox(); //checkBox element
 				checkBox.Text = Date.Optiuni[j]; //text-ul optiunilor
-				checkBox.AutoSize = true; //autosize
+				checkBox.AutoSize = false;
+				checkBox.Size = new Size((int)TabelOptiuniIntrebare.ColumnStyles[j].Width*2, (int)TabelOptiuniIntrebare.RowStyles[0].Height*2);
 				TabelOptiuniIntrebare.Controls.Add(checkBox, j, 0); //adaugat checkBox ul in grafica
 				Vector[j] = checkBox; //salvat checkBox-ul
 			}

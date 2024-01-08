@@ -1,78 +1,79 @@
 ﻿7
 
-Care este capitala Japoniei?
-Seul
-Beijing
-Tokyo
-Hanoi
-0
-0
+Pe ce se bazeaza programarea orientata pe obiecte
+Incapsulare
+Mostenire
+Polimorfism
+Abstractizare
 1
-0
-Japonia.jpg
+1
+1
+1
+PooConcepts.png
 
-Cine a scris piesa "Romeo și Julieta"?
-William Shakespeare
-Charles Dickens
-Jane Austen
-Mark Twain
+Ce este o clasa in POO
+Fruct
+Un sablon
+O adunatura de elevi
+O Abstractizare
+0
 1
 0
-0
-0
-romeo.jpg
+1
+Clases.png
 
-Câți ani are un deceniu?
-5
-10
-15
-20
-0
+Ce ofera mostenirea in programarea orientata pe obiect
+Permitea mostenirea proprietatilor si metodelor intre clase
+Permite averilor sa nu fie instrainate
+Metoda ierarhica de a se pastra averile in familie
+O iluuzie
 1
 0
 0
-deceniu.jpg
+0
+Inheritanta.png
 
-Care este cea mai lung râu din lume?
-Nilul
-Amazon
-Yangtze
-Mississippi
+Ce este incapsularea in poo
+O proprietate a unei clase
+Controlul accesului la proprietati
+Protejarea integritatii datelor
+O metoda
 0
 1
+1
 0
-0
-Amazon.jpg
+encapsulation-image.jpg
 
-Care este elementul chimic având simbolul "O"?
-Oxigen
-Osmiu
-Ocupru
-Ozon
+Ce este o proprietare
+Datele private dintr-o clasa
+Date accesibile din exteriorul clasei prin functii getter si setter
+O functie dintr-o clasa
+O clasa
+1
 1
 0
 0
-0
-Chimie.jpg
+PropMet.jpg
 
-Care dintre următoarele țări fac parte din Uniunea Europeană? (Poate fi mai mult de un răspuns corect)
-Franța
-Japonia
-Italia
-Polonia
+Ce este o metoda
+O secvență de instrucțiuni sau un bloc de cod dintr-o clasă
+Un tip de date care stochează informații despre obiectele dintr-o clasă
+Un mod de a organiza variabilele într-un program
+Un concept care descrie relațiile între clase într-un sistem software
 1
 0
-1
 0
-Europa.png
+0
+PropMet.jpg
 
-Care sunt culorile drapelului Statelor Unite ale Americii?
-Roșu
-Alb
-Albastru
-Verde
-1
-1
-1
-0
-America.jpg
+
+
+
+
+
+
+
+
+
+
+

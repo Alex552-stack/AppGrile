@@ -34,7 +34,9 @@ namespace AppGrile
 				Intrebare intrebare = new Intrebare(fileReader.Read()); //creare obiect now de tip Intrebare
 				intrebare.Text = "Custom Element"; 
 				intrebare.MyCustomAction += Intrebare_MyActionOccurred; //trigger ul de event(imi permite sa accesez o functie din acest obiect din clasa Intrebare)
+				intrebare.Dock = DockStyle.Bottom;
 				ContainerIntrebare.Controls.Add(intrebare); //adaugarea intrebarii pe ecran
+				
 			}
 			else //daca s-a ajuns la final
 			{

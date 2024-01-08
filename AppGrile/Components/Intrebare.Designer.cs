@@ -48,17 +48,18 @@
 			// 
 			this.NumeIntrebare.Location = new System.Drawing.Point(3, 16);
 			this.NumeIntrebare.Name = "NumeIntrebare";
-			this.NumeIntrebare.Size = new System.Drawing.Size(520, 22);
+			this.NumeIntrebare.Size = new System.Drawing.Size(617, 22);
 			this.NumeIntrebare.TabIndex = 2;
 			this.NumeIntrebare.Text = "Ceva";
 			// 
 			// ContainerPoza
 			// 
+			this.ContainerPoza.BackColor = System.Drawing.Color.Transparent;
 			this.ContainerPoza.Image = ((System.Drawing.Image)(resources.GetObject("ContainerPoza.Image")));
-			this.ContainerPoza.Location = new System.Drawing.Point(526, 3);
+			this.ContainerPoza.Location = new System.Drawing.Point(626, 0);
 			this.ContainerPoza.Name = "ContainerPoza";
-			this.ContainerPoza.Size = new System.Drawing.Size(417, 179);
-			this.ContainerPoza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.ContainerPoza.Size = new System.Drawing.Size(317, 238);
+			this.ContainerPoza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.ContainerPoza.TabIndex = 3;
 			this.ContainerPoza.TabStop = false;
 			// 
@@ -69,19 +70,19 @@
 			this.TabelOptiuniIntrebare.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.77419F));
 			this.TabelOptiuniIntrebare.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.22581F));
 			this.TabelOptiuniIntrebare.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
-			this.TabelOptiuniIntrebare.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
+			this.TabelOptiuniIntrebare.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
 			this.TabelOptiuniIntrebare.Location = new System.Drawing.Point(3, 44);
 			this.TabelOptiuniIntrebare.Name = "TabelOptiuniIntrebare";
 			this.TabelOptiuniIntrebare.RowCount = 1;
 			this.TabelOptiuniIntrebare.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.TabelOptiuniIntrebare.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.TabelOptiuniIntrebare.Size = new System.Drawing.Size(517, 62);
+			this.TabelOptiuniIntrebare.Size = new System.Drawing.Size(617, 105);
 			this.TabelOptiuniIntrebare.TabIndex = 4;
 			// 
 			// button1
 			// 
 			this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.Location = new System.Drawing.Point(55, 112);
+			this.button1.Location = new System.Drawing.Point(125, 155);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(377, 43);
 			this.button1.TabIndex = 5;
@@ -99,7 +100,7 @@
 			this.Controls.Add(this.NumeIntrebare);
 			this.Controls.Add(this.textBox1);
 			this.Name = "Intrebare";
-			this.Size = new System.Drawing.Size(943, 182);
+			this.Size = new System.Drawing.Size(943, 241);
 			((System.ComponentModel.ISupportInitialize)(this.ContainerPoza)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
